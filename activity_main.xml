@@ -1,27 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:gravity="center"
+    android:padding="24dp">
 
     <TextView
-        android:id="@+id/textPlain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Plain" />
+        android:layout_width="314dp"
+        android:layout_height="166dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Bienvenue sur Info Santé"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textSerif"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Serif"
-        android:typeface="serif" />
-
-    <EditText
-        android:id="@+id/title"
+    <Button
+        android:id="@+id/btnConseils"
+        android:text="Conseils Santé"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Écris ici..." />
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnContact"
+        android:text="Contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
