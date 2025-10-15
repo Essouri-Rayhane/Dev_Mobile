@@ -16,6 +16,7 @@
             android:lineSpacingExtra="6dp"
             android:padding="8dp"
             android:text="💧 Buvez beaucoup d'eau\n\n🥦 Mangez équilibré\n\n🏃 Faites du sport régulièrement\n\n💤 Dormez au moins 7h par nuit\n\n🚭 Évitez le tabac"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:backgroundTint="#4CAF50"/>
     </LinearLayout>
 </ScrollView>

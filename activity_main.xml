@@ -1,29 +1,91 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp">
+    android:fitsSystemWindows="true">
 
-    <TextView
-        android:layout_width="314dp"
-        android:layout_height="166dp"
-        android:layout_marginBottom="30dp"
-        android:gravity="center"
-        android:text="Bienvenue sur Info Santé"
-        android:textSize="22sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/btnConseils"
-        android:text="Conseils Santé"
+    <!-- Toolbar en haut -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"/>
+        android:layout_height="56dp"
+        android:background="#2196F3"
+        android:title="Info Santé"
+        android:titleTextColor="#FFFFFF"/>
 
-    <Button
-        android:id="@+id/btnContact"
-        android:text="Contact"
+    <!-- Contenu de la page sous la Toolbar -->
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="🩺   Bienvenue sur Info Santé !"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="127dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Logo Info Santé"
+                android:src="@drawable/img_1" />
+
+
+
+            <Button
+                android:id="@+id/btnConseils"
+                android:text="Conseils Santé"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#2196F3"/>
+
+            <Button
+                android:id="@+id/btnContact"
+                android:text="Contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#2196F3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnCollecte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:backgroundTint="#2196F3"
+                    android:text="Collecte de données"
+                    android:layout_margin="20dp"/>
+
+
+                <Button
+                    android:id="@+id/btnSuivi"
+                    android:text="Suivi santé"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#2196F3"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

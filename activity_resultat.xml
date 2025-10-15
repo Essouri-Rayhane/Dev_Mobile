@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#E3F2FD"
+    android:fitsSystemWindows="true">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#2196F3"
+        android:title="Résultat Santé"
+        android:titleTextColor="#FFFFFF"/>
+
+    <!-- TextView résultat -->
+    <TextView
+        android:id="@+id/tvResultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vos résultats de santé apparaîtront ici"
+        android:textColor="#0D47A1"
+        android:textSize="18sp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Bouton 1 : Refaire la saisie -->
+    <Button
+        android:id="@+id/btnRefaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refaire la saisie"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tvResultat"
+        android:layout_marginTop="20dp" />
+
+    <!-- Bouton 2 : Retour à l'accueil -->
+    <Button
+        android:id="@+id/btnAccueil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retour à l'accueil"
+        android:backgroundTint="#1565C0"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/btnRefaire"
+        android:layout_marginTop="16dp" />
+
+
+</RelativeLayout>

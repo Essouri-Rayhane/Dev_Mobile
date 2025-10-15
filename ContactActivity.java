@@ -28,11 +28,7 @@ public class ContactActivity extends AppCompatActivity {
 
             progressBar.setProgress(progress);
 
-            if (progress < 100) {
-                Toast.makeText(this, "Veuillez remplir tous les champs", Toast.LENGTH_SHORT).show();
-            } else {
-                Toast.makeText(this, "Message envoyé avec succès !", Toast.LENGTH_SHORT).show();
-            }
+
         });
     }
 
